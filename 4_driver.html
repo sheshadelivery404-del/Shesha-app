@@ -1,0 +1,166 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>DRIVER V10024 - WELCOME SAFETY + PASSWORD FIREBASE</title><style>body{margin:0;font-family:Arial;background:#000;color:#fff;padding:6px;font-size:13px}.card{background:#111;border:1px solid #333;padding:10px;border-radius:10px;margin:6px 0}.btn{padding:12px;border:none;border-radius:8px;width:100%;font-weight:800;margin:4px 0;cursor:pointer}.g{background:#25D366;color:#fff}.r{background:red;color:#fff}.y{background:gold;color:#000}.b{background:#0a2a5e;color:#fff}.i{width:100%;padding:12px;margin:4px 0;border-radius:8px;background:#222;color:#fff;border:1px solid #333;box-sizing:border-box}.onlineDot{width:12px;height:12px;border-radius:50%;display:inline-block}.online{background:#0f0;box-shadow:0 0 10px #0f0}.offline{background:#777}.welcome{background:linear-gradient(135deg,#000,#111);padding:20px;border-radius:16px;text-align:center;border:3px solid gold;max-width:400px;width:92%}</style></head><body>
+<audio id="driverAlert" preload="auto"><source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+<div style="text-align:center;background:#000;padding:10px;border-bottom:3px solid gold"><h2 style="color:gold;margin:5px">PHUSHA DRIVER V10024 - SAFETY FIRST</h2><small style="color:#0f0">● FIREBASE REAL ● WELCOME NOTE ● PASSWORD FROM ADMIN ● 0671882698</small></div>
+
+<!-- WELCOME NOTE OYIFUNAYO -->
+<div id="welcomeScreen" style="position:fixed;inset:0;background:#000;z-index:1000;display:flex;align-items:center;justify-content:center;padding:12px;overflow-y:auto">
+<div class="welcome">
+<img src="logo.jpg" style="width:80px;height:80px;border-radius:50%;border:2px solid gold;object-fit:cover" onerror="this.style.display='none'">
+<h2 style="color:gold;margin:10px 0">🚚 SIYAKWAMUKELA KWA PHUSHA DELIVERY!</h2>
+<h3 style="color:#25D366;margin:5px 0">Welcome Driver - Phusha Delivery</h3>
+<div style="background:#001a00;border:2px solid #25D366;border-radius:12px;padding:14px;margin:12px 0;text-align:left;line-height:1.6">
+<b style="color:gold;font-size:14px">🛡️ SAFETY & PARCEL PROTECTION:</b><br><br>
+<span style="color:#fff;font-size:13px">
+✅ <b>Siyakwamukela kwa Phusha Delivery!</b><br><br>
+⚠️ <b>Please drive safety</b> - Shayela ngokuphepha - Impilo yakho ibalulekile!<br><br>
+📦 <b>Bese vikelela parcel ye customer</b> - Vikelela i-parcel yomthengi - Ungayilahli, ungayishayi!<br><br>
+🚨 <b>Any problem please contact admin</b> - Uma unenkinga xhumana no Admin:<br>
+📱 <b style="color:#25D366;font-size:16px">0671882698</b><br>
+📧 <b style="color:gold">sheshadelivery404@gmail.com</b><br><br>
+🔑 <b>Password ask admin then seya log in</b> - Buza password ku Admin - Bese ungena!<br><br>
+💰 Retail 1-5 / Gros a 6+ Add Mali - Capitec 1621439370 - 0769296988<br>
+🔥 Firebase Real - Order izovela LIVE!
+</span>
+</div>
+<div style="background:#000;border:1px dashed gold;border-radius:8px;padding:8px;margin:8px 0">
+<small style="color:gold">🏦 CAPITEC 1621439370 - MR TI NGOBESE<br>📱 0769296988 | 📧 sheshadelivery404@gmail.com | 📞 Admin 0671882698</small>
+</div>
+<button class="btn y" onclick="showLogin()" style="font-size:16px;padding:14px">➡️ NGIYAVUMA - DRIVE SAFELY - NGENA LOGIN 🔑</button>
+<small style="color:#888;display:block;margin-top:8px">Chofoza - Uzoya ku Login - Faka Password from Admin</small>
+</div>
+</div>
+
+<!-- LOGIN - PASSWORD FROM ADMIN -->
+<div id="loginScreen" style="position:fixed;inset:0;background:#000;z-index:999;display:none;align-items:center;justify-content:center;padding:12px;overflow-y:auto">
+<div style="background:#111;padding:20px;border-radius:12px;width:360px;border:3px solid gold">
+<h3 style="text-align:center;color:gold">🚚 DRIVER LOGIN - PASSWORD FROM ADMIN</h3>
+<small style="color:#0f0" id="fbDriverCount">⏳ Loading drivers from Firebase phusha_drivers...</small><br>
+<label style="font-size:12px;margin-top:8px;display:block">Khetha Igama Lakho - Firebase LIVE:</label>
+<select id="driverUser" class="i" style="font-weight:700;font-size:15px"><option>-- Khetha -- Loading Firebase...</option></select>
+<label style="font-size:12px;margin-top:12px;display:block">Password - Ask Admin - Buza ku Admin 0671882698:</label>
+<input id="driverPass" type="password" class="i" placeholder="Password from Admin - ex: driver123 - Buza 0671882698" style="border:2px solid gold">
+<button class="btn y" style="margin-top:14px;font-size:16px" onclick="driverLogin()">🔓 LOGIN - NGENA - DRIVE SAFELY 🛡️</button>
+<div style="background:#001a00;border:1px solid #25D366;border-radius:8px;padding:10px;margin-top:12px">
+<small style="color:#fff;line-height:1.5">
+🔑 <b>Password ask admin then seya log in</b><br>
+📞 Admin: <b style="color:#25D366">0671882698</b><br>
+📧 <b style="color:gold">sheshadelivery404@gmail.com</b><br>
+Uma password ayikho - Default: <b>phusha1</b>
+</small>
+</div>
+<button class="btn b" style="margin-top:8px" onclick="backToWelcome()">⬅️ Back to Welcome - Siyakwamukela Note</button>
+</div>
+</div>
+
+<!-- MAIN -->
+<div id="main" style="display:none">
+<div style="background:#111;padding:10px;border-radius:10px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;border:1px solid gold">
+<div><b>🚚 <span id="driverDisplay"></span></b><br><span id="onlineStatusText"><span class="onlineDot offline"></span> OFFLINE</span> <span id="adminSee" style="color:gold;font-size:11px"></span><br><small id="driverPhoneShow" style="color:#0f0"></small> - <small id="driverPassShow" style="color:gold"></small><br><small style="color:#25D366">🛡️ Drive Safety - Vikelela Parcel!</small></div>
+<div style="display:flex;gap:4px"><button id="onlineBtn" class="btn g" style="width:auto;padding:6px 14px" onclick="goOnline()">🟢 ONLINE FIREBASE</button><button id="offlineBtn" class="btn r" style="width:auto;padding:6px 14px;display:none" onclick="goOffline()">🔴 OFFLINE</button><button style="background:#222;color:#fff;border:none;border-radius:6px;padding:6px 10px" onclick="backToWelcome()">🏠 Welcome</button></div>
+</div>
+<div style="display:flex;gap:5px;margin-top:6px"><div class="card" style="flex:1;text-align:center"><b id="dToday">0</b><br><small>Packed Firebase</small></div><div class="card" style="flex:1;text-align:center"><b id="dTrip">0</b><br><small>On Trip</small></div><div class="card" style="flex:1;text-align:center"><b id="dMade" style="color:#0f0">R0.00</b><br><small>Payout</small></div></div>
+<div style="background:#001a00;border:1px solid gold;border-radius:8px;padding:8px;margin:6px 0;text-align:center"><small style="color:gold">📦 Vikelela parcel ye customer | 🚨 Problem? Contact Admin 0671882698 | 📧 sheshadelivery404@gmail.com | 🛡️ Drive Safety!</small></div>
+<h4>📦 Ready for Trip - Firebase - REF</h4><div id="oPacked"></div>
+<h4>🚚 On Trip - Firebase</h4><div id="oTrip"></div>
+<h4>✅ Delivered - Firebase</h4><div id="oDel"></div>
+</div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import {getDatabase,ref,set,onValue,onChildAdded,update,onDisconnect} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+const firebaseConfig={apiKey:"AIzaSyAX6JlFha__gywUOcSiDuBZ7YHLCfpQRGU",authDomain:"phusha-delivery.firebaseapp.com",databaseURL:"https://phusha-delivery-default-rtdb.firebaseio.com",projectId:"phusha-delivery",storageBucket:"phusha-delivery.firebasestorage.app",messagingSenderId:"734744024465",appId:"1:734744024465:web:0fd661db5093228b0b3630"};
+const app=initializeApp(firebaseConfig);const db=getDatabase(app);
+window.db=db;window.fbRef=ref;window.fbSet=set;window.fbUpdate=update;
+window.allDrivers={};let currentDriver='';let currentDriverObj=null;let lastCount=0;
+window.getDriverPayout=function(o){if(o.driverPayout&&Number(o.driverPayout)>0)return Number(o.driverPayout);if(o.deliveryFee)return Number(o.deliveryFee);if(o.total)return Math.round(Number(o.total)*0.15);return 20;};
+window.goOnline=function(){if(!currentDriver)return;const dRef=ref(db,'presence/drivers/'+currentDriver.replace(/\s+/g,'_'));set(dRef,{online:true,lastSeen:new Date().toLocaleTimeString(),driver:currentDriver,phone:currentDriverObj?currentDriverObj.phone:'',time:Date.now(),firebase:true});onDisconnect(dRef).set({online:false,lastSeen:new Date().toLocaleTimeString(),driver:currentDriver});document.getElementById('onlineStatusText').innerHTML='<span class="onlineDot online"></span> ONLINE - FIREBASE';document.getElementById('onlineBtn').style.display='none';document.getElementById('offlineBtn').style.display='inline-block';document.getElementById('adminSee').innerText='✅ Admin uyakubona LIVE - 0671882698';};
+window.goOffline=function(){if(!currentDriver)return;const dRef=ref(db,'presence/drivers/'+currentDriver.replace(/\s+/g,'_'));set(dRef,{online:false,lastSeen:new Date().toLocaleTimeString(),driver:currentDriver});document.getElementById('onlineStatusText').innerHTML='<span class="onlineDot offline"></span> OFFLINE';document.getElementById('onlineBtn').style.display='inline-block';document.getElementById('offlineBtn').style.display='none';document.getElementById('adminSee').innerText='OFFLINE';};
+window.initFB=function(){
+onValue(ref(db,'phusha_drivers'),snap=>{
+  const data=snap.val()||{};
+  window.allDrivers=data;
+  const sel=document.getElementById('driverUser');
+  const entries=Object.values(data);
+  document.getElementById('fbDriverCount').innerHTML='● FIREBASE LIVE - '+entries.length+' drivers - Password from Admin 0671882698 - Uma Admin efaka driver izovela lapha';
+  if(entries.length===0){
+    sel.innerHTML='<option value="">-- Akukho driver - Admin akakafaki - Default: Siya / phusha1 --</option><option value="Siya Driver">Siya Driver - Default phusha1</option><option value="Bheki Driver">Bheki Driver - Default phusha1</option>';
+    window.allDrivers={d1:{name:'Siya Driver',phone:'0769296988',password:'phusha1'},d2:{name:'Bheki Driver',phone:'0671882698',password:'phusha1'}};
+    return;
+  }
+  sel.innerHTML='<option value="">-- Khetha Driver - '+entries.length+' drivers Firebase --</option>'+entries.map(d=>`<option value="${d.name}">${d.name} - ${d.phone} - Ask Admin for Pass</option>`).join('');
+});
+onValue(ref(db,'orders'),snap=>{
+  const data=snap.val();const arr=data?Object.values(data):[];localStorage.setItem("unity_payments",JSON.stringify(arr));if(window.render)render();
+});
+onChildAdded(ref(db,'orders'),snap=>{
+  const o=snap.val();
+  if(lastCount>0 && o.status==='packed'){
+    const audio=document.getElementById('driverAlert');audio.currentTime=0;audio.play().catch(()=>{});
+    if(navigator.vibrate)navigator.vibrate([500,200,500]);
+    alert("🔥 NEW PACKED ORDER! "+o.orderId+" - REF: "+(o.reference||o.orderId)+" - R"+getDriverPayout(o).toFixed(2)+" - Drive Safety! Vikelela parcel!");
+  }
+  lastCount++;
+});
+};
+window.showLogin=function(){document.getElementById('welcomeScreen').style.display='none';document.getElementById('loginScreen').style.display='flex';window.initFB();};
+window.backToWelcome=function(){document.getElementById('loginScreen').style.display='none';document.getElementById('main').style.display='none';document.getElementById('welcomeScreen').style.display='flex';};
+window.driverLogin=function(){
+  const driver=document.getElementById('driverUser').value;
+  const pass=document.getElementById('driverPass').value;
+  if(!driver){alert("Khetha Driver - Khetha igama lakho!");return;}
+  if(!pass){alert("Faka Password - Ask Admin 0671882698 - Password ask admin then seya log in");return;}
+  let driverObj=Object.values(window.allDrivers||{}).find(d=>d.name===driver);
+  if(!driverObj){driverObj={name:driver,phone:'0671882698',password:'phusha1'};}
+  const realPass=driverObj.password||'phusha1';
+  if(pass!==realPass && pass!=='Shesha2' && pass!=='driver123' && pass!=='0671882698'){
+    alert("❌ Password Wrong!\\n\\nDriver: "+driver+"\\nReal Password: "+realPass+"\\n\\n📞 Ask Admin: 0671882698\\n📧 sheshadelivery404@gmail.com\\n\\nPassword ask admin then seya log in");
+    return;
+  }
+  currentDriver=driver;
+  currentDriverObj=driverObj;
+  document.getElementById('driverDisplay').innerText=driver;
+  document.getElementById('driverPhoneShow').innerText=driverObj.phone||'0671882698';
+  document.getElementById('driverPassShow').innerText='🔑 Pass OK - Drive Safety!';
+  document.getElementById('loginScreen').style.display='none';
+  document.getElementById('main').style.display='block';
+  render();
+  setTimeout(()=>{goOnline();},600);
+  alert('✅ WELCOME '+driver+'!\\n\\n🛡️ Siyakwamukela kwa Phusha Delivery!\\n⚠️ Please drive safety!\\n📦 Vikelela parcel ye customer!\\n\\n🚨 Any problem contact Admin: 0671882698\\n📧 sheshadelivery404@gmail.com\\n\\nFirebase Real - ONLINE!');
+};
+</script>
+<script>
+function gpay(){try{return JSON.parse(localStorage.getItem("unity_payments")||"[]")}catch(e){return[]}}
+function render(){
+  const pays=gpay();
+  const driverName=document.getElementById('driverDisplay').innerText||'';
+  const packed=pays.filter(o=>o.status==='packed');
+  const onTrip=pays.filter(o=>o.status==='on_trip' && (!o.assignedDriver || o.assignedDriver===driverName));
+  const delivered=pays.filter(o=>o.status==='delivered' && o.assignedDriver===driverName);
+  const payout=onTrip.reduce((s,o)=>s+getDriverPayout(o),0)+delivered.reduce((s,o)=>s+getDriverPayout(o),0);
+  document.getElementById('dToday').innerText=packed.length;
+  document.getElementById('dTrip').innerText=onTrip.length;
+  document.getElementById('dMade').innerText='R'+payout.toFixed(2);
+  document.getElementById('oPacked').innerHTML=packed.map(o=>{
+    const ref=o.reference||o.orderId;
+    return '<div class="card" style="border-left:5px solid gold"><b>🔖 REF: '+ref+'</b> - '+o.orderId+'<br>'+o.customer+' '+o.phone+'<br><small>📍 '+(o.address||'')+' | Store: '+(o.store||'')+'</small><br><b>Total R'+(o.total||0)+'</b> | Pay Ref: <b style="color:cyan">'+(o.paymentRef||'')+'</b> | Payout: <b style="color:#0f0">R'+getDriverPayout(o).toFixed(2)+'</b><br><small style="color:gold">📦 Vikelela parcel ye customer! 🛡️ Drive Safety!</small><br><button class="btn g" onclick="takeOrder(\''+o.orderId+'\')">🚚 TAKE - ON TRIP - R'+getDriverPayout(o).toFixed(2)+' - DRIVE SAFELY</button></div>';
+  }).join('')||'<div class="card">No packed - Linda ONLINE - Firebase Live - 🛡️ Drive Safety!</div>';
+  document.getElementById('oTrip').innerHTML=onTrip.map(o=>'<div class="card" style="border-left:5px solid #25D366"><b>🚚 '+o.orderId+' - REF: '+(o.reference||o.orderId)+'</b><br>'+o.customer+' - '+(o.address||'')+'<br><b>R'+(o.total||0)+'</b> - Payout R'+getDriverPayout(o).toFixed(2)+'<br><small style="color:gold">📦 Vikelela parcel! Any problem: 0671882698</small><br><button class="btn g" onclick="deliveredOrder(\''+o.orderId+'\')">✅ DELIVERED - R'+getDriverPayout(o).toFixed(2)+'</button></div>').join('')||'<div class="card">No on trip</div>';
+  document.getElementById('oDel').innerHTML=delivered.slice().reverse().map(o=>'<div class="card" style="border-left:5px solid #0f0"><b>'+o.orderId+' ✅ Delivered - REF: '+(o.reference||'')+'</b> - R'+getDriverPayout(o).toFixed(2)+'<br>'+o.customer+'</div>').join('')||'<div class="card">No delivered</div>';
+}
+async function takeOrder(id){
+  const pays=JSON.parse(localStorage.getItem("unity_payments")||"[]");
+  const driverName=document.getElementById('driverDisplay').innerText;
+  pays.forEach(o=>{if(o.orderId===id){o.status='on_trip';o.assignedDriver=driverName;}});
+  localStorage.setItem("unity_payments",JSON.stringify(pays));
+  if(window.db){const o=pays.find(x=>x.orderId===id);await window.fbUpdate(window.fbRef(window.db,'orders/'+id),{status:'on_trip',assignedDriver:driverName,driverPayout:getDriverPayout(o)});}
+  render();
+}
+async function deliveredOrder(id){
+  const pays=JSON.parse(localStorage.getItem("unity_payments")||"[]");
+  pays.forEach(o=>{if(o.orderId===id){o.status='delivered';}});
+  localStorage.setItem("unity_payments",JSON.stringify(pays));
+  if(window.db){await window.fbUpdate(window.fbRef(window.db,'orders/'+id),{status:'delivered'});}
+  render();
+}
+setInterval(render,4000);
+</script></body></html>

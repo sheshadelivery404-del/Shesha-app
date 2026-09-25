@@ -1,0 +1,212 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PHUSHA CUSTOMER V10028 - AI + ZULU/ENGLISH + COPY</title><style>body{margin:0;font-family:Arial;background:#000;color:#fff;font-size:13px}.top{background:linear-gradient(90deg,#000,red);padding:10px;position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:8px}.card{background:#111;border:1px solid #222;border-radius:10px;padding:10px;margin:5px 0}.btn{padding:12px;border:none;border-radius:8px;font-weight:800;margin:4px 0;width:100%;cursor:pointer}.r{background:red;color:#fff}.y{background:gold;color:#000;font-weight:900}.d{background:#222;color:#fff;border:1px solid #444;padding:8px 12px;border-radius:20px;width:auto}.b{background:#000;color:gold;border:1px solid gold}.i{width:100%;padding:12px;margin:6px 0;border-radius:8px;background:#222;color:#fff;border:1px solid #333;box-sizing:border-box;font-size:15px}.loginBox{background:#111;padding:22px;border-radius:14px;border:2px solid gold;max-width:360px;margin:15px auto}.qty-row{display:flex;align-items:center;justify-content:space-between;background:#000;border:1px solid #333;border-radius:10px;padding:8px;margin:6px 0}.qty-btn{width:44px;height:44px;border-radius:50%;border:none;font-size:22px;font-weight:900;cursor:pointer}.qty-minus{background:#222;color:#fff;border:1px solid #555}.qty-plus{background:gold;color:#000}.qty-val{font-size:18px;font-weight:900;color:gold;min-width:40px;text-align:center}.bank-card{background:linear-gradient(135deg,#0a0a0a,#222);border:2px solid gold;border-radius:14px;padding:12px;margin:8px 0}.lang-bar{display:flex;gap:6px;justify-content:center;margin-bottom:10px}.lang-btn{padding:8px 16px;border-radius:20px;border:1px solid gold;background:#000;color:gold;font-weight:700;cursor:pointer}.lang-btn.active{background:gold;color:#000;box-shadow:0 0 10px gold}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.prod-img{width:100%;height:90px;object-fit:cover;border-radius:8px;border:1px solid #333;background:#000;display:block;margin-bottom:6px}.break{background:#000;border:1px solid gold;border-radius:10px;padding:10px;margin:8px 0}.prod-card.in-cart{border-color:#25D366;background:#001a00}.gps-card{background:#001a00;border:2px solid #25D366;border-radius:12px;padding:10px;margin:8px 0}.pay-opt{padding:12px;background:#000;border:2px solid #333;border-radius:10px;margin:6px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center}.pay-opt.active{border-color:#25D366;background:#001a00}.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:2px solid gold;padding:8px;display:flex;gap:6px;z-index:30}.price-tag{display:flex;gap:4px;font-size:11px;margin:4px 0}.price-retail{background:#222;color:#fff;padding:3px 6px;border-radius:10px;border:1px solid #444}.price-grosa{background:gold;color:#000;padding:3px 6px;border-radius:10px;font-weight:700}.welcomeBox{background:linear-gradient(135deg,#000,#111);border:3px solid gold;border-radius:16px;padding:20px;max-width:400px;margin:20px auto;text-align:center}.copyBtn{padding:6px 12px;border-radius:20px;border:1px solid gold;background:#000;color:gold;font-weight:700;cursor:pointer;margin:3px;font-size:12px}.aiBox{background:linear-gradient(135deg,#001a00,#0a2a5e);border:2px solid #25D366;border-radius:12px;padding:10px;margin:8px 0}</style></head><body>
+<div style="text-align:center;background:#000;padding:8px;border-bottom:3px solid gold"><h2 style="color:gold;margin:5px">PHUSHA V10028 - AI + ZULU/ENGLISH + COPY</h2><small style="color:#0f0">● AI TRANSLATE ZULU/ENGLISH ● PUT NAME OR IGAMA ● NENAMBA ● NO SBONGA EXAMPLE ● FAST & SAFE</small></div>
+
+<!-- WELCOME - AI + ZULU/ENGLISH -->
+<div id="welcomeScreen" style="position:fixed;inset:0;background:#000;z-index:1000;display:flex;align-items:center;justify-content:center;padding:12px;overflow-y:auto">
+<div class="welcomeBox">
+<div class="lang-bar">
+<button id="btnZuW" class="lang-btn active" onclick="setLang('zu')">🇿🇦 IsiZulu</button>
+<button id="btnEnW" class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+<button id="btnAi" class="lang-btn" style="border-color:#25D366;color:#25D366" onclick="toggleAi()">🤖 AI Helper</button>
+</div>
+<h2 style="color:gold;margin:10px 0" id="welcomeTitle">🛒 SIYAKWAMUKELA KWA PHUSHA DELIVERY!</h2>
+<h3 style="color:#25D366;margin:5px 0" id="safeFastTitle">Fast and Safe - Make Things Easy!</h3>
+
+<div id="aiHelperBox" class="aiBox" style="display:none;text-align:left">
+<b style="color:#25D366">🤖 AI PHUSHA HELPER - IsiZulu / English:</b><br>
+<small style="color:#fff" id="aiText">Sawubona! Ngingakusiza ukukhetha ulimi. / Hello! I can help you choose language. Chofoza IsiZulu or English phezulu. AI izohumusha konke - Welcome note, buttons, checkout - Fast and Safe!</small><br>
+<button class="copyBtn" onclick="setLang('zu')">🇿🇦 Humusha ku IsiZulu - AI</button>
+<button class="copyBtn" onclick="setLang('en')">🇬🇧 Translate to English - AI</button>
+</div>
+
+<div style="background:#001a00;border:2px solid #25D366;border-radius:12px;padding:14px;margin:12px 0;text-align:left;line-height:1.7">
+<b style="color:gold;font-size:14px" id="lovelyTitle">❤️ FOR OUR LOVELY CUSTOMERS:</b><br><br>
+<span style="color:#fff;font-size:13px" id="customerWelcomeText">
+✅ Siyakwamukela kwa Phusha Delivery - Fast and Safe!<br>
+⚡ Make things easy for our lovely customers<br>
+🛡️ Fast and Safe Delivery<br>
+📤 Feel free to share this app to others<br>
+🙏 Have blessed day!<br>
+🤖 AI - IsiZulu or English - Khetha ulimi phezulu!
+</span>
+<div style="background:#000;border:1px dashed gold;border-radius:10px;padding:10px;margin-top:10px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin:6px 0"><span style="color:gold">📱 <b>0671882698</b> Admin</span><button class="copyBtn" onclick="copyT('0671882698')">📋 COPY NUMBER</button></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin:6px 0"><span style="color:#fff">📧 <b>sheshadelivery404@gmail.com</b></span><button class="copyBtn" onclick="copyE()">📧 COPY EMAIL</button></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin:6px 0"><span style="color:gold">🏦 <b>1621439370</b> Capitec</span><button class="copyBtn" onclick="copyT('1621439370')">📋 COPY ACC</button></div>
+</div>
+</div>
+<button class="btn r" onclick="goToLogin()" id="startBtn" style="font-size:16px;padding:14px">QALA / START - NGENA - PUT NAME OR IGAMA 🔥</button>
+</div>
+</div>
+
+<!-- LOGIN - NO SBONGA - PUT NAME OR IGAMA -->
+<div id="loginScreen" style="position:fixed;inset:0;background:#000;z-index:999;display:none;align-items:center;justify-content:center;padding:12px;overflow-y:auto">
+<div class="loginBox">
+<div class="lang-bar"><button class="lang-btn active" id="btnZuL" onclick="setLang('zu')">🇿🇦 IsiZulu</button><button class="lang-btn" id="btnEnL" onclick="setLang('en')">🇬🇧 English</button><button class="lang-btn" style="border-color:#25D366;color:#25D366" onclick="toggleAiLogin()">🤖 AI</button></div>
+<h3 style="color:gold;text-align:center" id="loginTitle">🛒 CUSTOMER LOGIN - PUT NAME OR IGAMA</h3>
+<small style="color:#0f0;text-align:center;display:block" id="loginSub">Siyakwamukela - Lovely Customers - Have blessed day - Fast & Safe!</small>
+<div id="aiLoginBox" class="aiBox" style="display:none;text-align:left"><small style="color:#fff" id="aiLoginText">AI: Faka Igama lakho noma Put Name - Faka Nenamba yakho noma Phone Number - No example like Sbonga 076... - Just your real info! / AI: Enter your name and phone number!</small></div>
+<br>
+<label style="color:gold;font-weight:800;font-size:12px" id="labelName">Put Name or Igama:</label>
+<input id="custName" class="i" placeholder="Put Name or Igama - Your Name / Igama lakho" style="border:2px solid gold">
+<label style="color:gold;font-weight:800;font-size:12px;margin-top:8px;display:block" id="labelPhone">Nenamba / Phone Number:</label>
+<input id="custCell" class="i" placeholder="Nenamba / Phone Number - Your Number" type="tel" style="border:2px solid #25D366">
+<button class="btn r" onclick="custLogin()" id="loginBtn" style="font-size:16px">NGENA / LOGIN - BONA IZITOLO FIREBASE 🛒 - HAVE BLESSED DAY</button>
+<div class="bank-card" style="margin-top:12px">
+<div style="display:flex;justify-content:space-between;align-items:center"><small style="color:gold">🏦 CAPITEC 1621439370</small><button class="copyBtn" onclick="copyT('1621439370')">📋 COPY</button></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px"><small style="color:#25D366">📱 0671882698 Admin</small><button class="copyBtn" onclick="copyT('0671882698')">📋 COPY NUMBER</button></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px"><small style="color:#fff">📧 sheshadelivery404@gmail.com</small><button class="copyBtn" onclick="copyE()">📧 COPY EMAIL</button></div>
+<div style="margin-top:8px;background:#000;padding:6px;border-radius:6px"><small style="color:gold" id="shareAppText">🙏 Feel free to share this app to others - Have blessed day! - Fast and Safe!</small></div>
+</div>
+</div>
+</div>
+
+<div id="app" style="display:none">
+<div class="top"><b><span id="custDisplay"></span> - <span id="fbStatus" style="color:#0f0">● FIREBASE LIVE</span> <button class="lang-btn" style="padding:4px 8px;font-size:10px" onclick="setLang(lang==='zu'?'en':'zu')" id="toggleLangBtn">🇿🇦/🇬🇧</button> <button class="copyBtn" onclick="copyT('0671882698')">📋 0671882698</button></b></div>
+<div id="w" style="text-align:center;padding:10px"><h3 style="color:gold"><span id="welcomeTxt">Sawubona</span> <span id="welcomeName"></span>! 👋 - <span id="blessedTxt">Have blessed day!</span></h3>
+<div style="background:#001a00;border:2px solid #25D366;border-radius:12px;padding:10px;margin:8px 0"><b style="color:#25D366;font-size:14px" id="fastSafeTitle">✅ PHUSHA - Fast and Safe - Lovely Customers</b><br><small style="color:#fff" id="easyText">Make things easy - Share this app to others!</small><br><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:6px"><button class="copyBtn" onclick="copyT('0671882698')">📋 0671882698 Admin</button><button class="copyBtn" onclick="copyE()">📧 sheshadelivery404@gmail.com</button></div></div><button class="btn r" onclick="go('malls')" id="shopBtn">QALA UKUTHENGA / START SHOPPING - FIREBASE 🛒 🙏</button></div>
+
+<div id="malls" style="display:none;padding:6px"><div class="top"><button class="d" onclick="go('w')" id="back1">⬅️ Back / Emuva</button> <span id="mallsTxt">Ama-Malls / Malls - Firebase</span> - <small id="firebaseCount" style="color:gold">Loading...</small> <button class="copyBtn" onclick="copyT('0671882698')">📋 COPY</button></div><div id="mallList"></div><div class="bottom-nav"><button class="d" onclick="go('w')" id="back1b">⬅️ Back</button><button class="b" onclick="go('w')" style="flex:1" id="continue1">Continue / Qhubeka - Have blessed day</button></div><div style="height:70px"></div></div>
+<div id="shops" style="display:none;padding:6px"><div class="top"><button class="d" onclick="go('malls')" id="back2">⬅️ Back</button><span id="mt"></span> <button class="copyBtn" onclick="copyE()">📧 COPY EMAIL</button></div><div id="sl"></div></div>
+<div id="prods" style="display:none;padding:6px"><div class="top"><button class="d" onclick="go('shops')" id="back3">⬅️ Back</button><span id="st"></span> - <small id="storeAddr"></small></div><div id="sg" class="grid"></div><h4 id="allProdTxt">📦 Yonke / All - Retail 1-5 / Gros a 6+ - Fast & Safe</h4><div id="pg" class="grid"></div>
+<div class="gps-card"><h4 style="color:#25D366;margin:0" id="gpsTitle">📍 GPS YANGEMPELA / REAL GPS</h4><small id="storeLocGPS"></small><input id="custAddress" class="i" placeholder="Faka Address / Put Address - 123 Ntuzuma"><div style="display:flex;gap:6px"><div style="flex:1"><small>KM</small><input id="kmInput" type="number" class="i" value="2" onchange="calc()"></div><div style="flex:1"><small id="feeLbl">Delivery Fee</small><input id="delFee" class="i" value="R17" readonly style="color:#0f0"></div></div></div>
+<div class="break"><div id="breakLines"></div><div class="qty-row"><div><b>🛍️ Plastic Bags</b></div><div style="display:flex;gap:8px"><button class="qty-btn qty-minus" onclick="changePlastic(-1)">−</button><span id="plasticQty" class="qty-val">1</span><button class="qty-btn qty-plus" onclick="changePlastic(1)">+</button></div></div><div class="qty-row"><div><b>💝 Tip</b></div><div style="display:flex;gap:8px"><button class="qty-btn qty-minus" onclick="changeTip(-1)">−</button><span id="tipQty" class="qty-val">R2</span><button class="qty-btn qty-plus" onclick="changeTip(1)">+</button></div></div><b id="ltotal" style="font-size:18px;color:#0f0">TOTAL R0</b></div>
+<div class="bank-card"><h4 style="color:gold">🏦 CAPITEC 1621439370 <button class="copyBtn" onclick="copyT('1621439370')">📋 COPY ACC</button></h4></div>
+<div id="cbBar" style="background:#000;border:2px solid red;border-radius:10px;padding:8px;margin:8px 0"><div style="display:flex;justify-content:space-between"><span id="cc">0 items</span><span id="ct">R0</span></div><div style="display:flex;gap:6px;margin-top:6px"><button class="d" onclick="go('shops')" style="flex:1" id="back4">⬅️ Back</button><button class="btn r" onclick="go('checkout')" style="flex:2;margin:0" id="checkoutBtn">CHECKOUT / KHOKHA - Have blessed day 🙏</button></div></div><div style="height:80px"></div></div>
+<div id="checkout" style="display:none;padding:6px"><div class="top"><button class="d" onclick="go('prods')" id="back5">⬅️ Back</button> <span id="checkoutTitle">Checkout / Khokha</span> - <span id="coCust"></span></div><div id="co" class="card"></div><div id="coBreak" class="break"></div><input id="ca" class="i" placeholder="Address ephelele / Full Address"><div class="bank-card"><small>📧 sheshadelivery404@gmail.com <button class="copyBtn" onclick="copyE()">📧 COPY</button> - 0671882698 <button class="copyBtn" onclick="copyT('0671882698')">📋 COPY</button> - Have blessed day!</small></div><div class="bottom-nav" style="position:static"><button class="d" onclick="go('prods')" id="back6">⬅️ Back</button><button class="btn r" onclick="placeOrderFirebase()" style="flex:1;margin:0" id="placeBtn">PLACE ORDER / FAKA I-ORDER - Have blessed day! 🔥</button></div></div>
+<div id="track" style="display:none;padding:6px"><div class="top"><button class="d" onclick="go('malls')" id="back7">⬅️ Home / Ikhaya</button><b>TRACKING <span id="tid"></span></b></div><div class="card"><div style="height:14px;background:#333;border-radius:7px;overflow:hidden"><div id="tprog" style="width:25%;background:#f80;height:100%"></div></div><small id="tprogTxt">25% Pending / Linda</small></div>
+<div class="bank-card"><h4 style="color:#25D366" id="payNowTitle">💰 KHOKHA MANJE / PAY NOW</h4><div id="payMethodsList"><div class="pay-opt" onclick="selectPay('capitec_app')"><span>🏦 Capitec App - 1621439370</span><span>✓</span></div><div class="pay-opt" onclick="selectPay('eft_076')"><span>⚡ EFT - 0671882698 - 1621439370</span><span>✓</span></div><div class="pay-opt" onclick="selectPay('cash')"><span>💵 Cash on Delivery / Imali</span><span>✓</span></div></div><select id="payMethod" style="display:none"><option value="">Choose / Khetha</option></select><div id="payInfo" style="background:#000;border:1px dashed gold;border-radius:8px;padding:10px;margin-top:8px;display:none"></div></div>
+<div class="card" style="border:2px solid #25D366"><h4 style="color:#25D366" id="shareRefTitle">📤 Share Reference - Admin Ubon a LIVE</h4><input id="payRef" class="i" placeholder="Reference - PHUSHA-..."><input id="payAmount" class="i" placeholder="Malini / Amount - R350"><div style="display:flex;gap:6px"><button class="btn" style="background:#25D366;color:#fff;flex:2" onclick="sharePaymentRefFirebase()" id="shareBtn">📤 SHARE REF</button><button class="btn b" style="flex:1" id="editBtn" onclick="editPaymentRefFirebase()">✏️ EDIT</button></div><div style="display:flex;gap:6px;margin-top:6px"><button class="copyBtn" onclick="copyT('0671882698')">📋 0671882698</button><button class="copyBtn" onclick="copyE()">📧 sheshadelivery404@gmail.com</button></div><div id="refStatus"></div></div></div></div>
+
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import {getDatabase,ref,set,onValue,push,get} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+const firebaseConfig={apiKey:"AIzaSyAX6JlFha__gywUOcSiDuBZ7YHLCfpQRGU",authDomain:"phusha-delivery.firebaseapp.com",databaseURL:"https://phusha-delivery-default-rtdb.firebaseio.com",projectId:"phusha-delivery",storageBucket:"phusha-delivery.firebasestorage.app",messagingSenderId:"734744024465",appId:"1:734744024465:web:0fd661db5093228b0b3630"};
+const app=initializeApp(firebaseConfig);const db=getDatabase(app);
+window.db=db;window.fbRef=ref;window.fbSet=set;window.fbPush=push;window.fbGet=get;
+window.firebaseStores={};
+onValue(ref(db,'phusha_stores'),snap=>{
+  window.firebaseStores=snap.val()||{};
+  localStorage.setItem("phusha_stores_cache",JSON.stringify(window.firebaseStores));
+  document.getElementById('firebaseCount').innerText=Object.keys(window.firebaseStores).length+' stores LIVE';
+  document.getElementById('fbStatus').innerText='● FIREBASE LIVE - '+Object.keys(window.firebaseStores).length+' stores - AI '+ (window.lang||'zu').toUpperCase();
+  if(window.renderMallsFirebase) window.renderMallsFirebase();
+});
+</script>
+<script>
+function copyT(t){navigator.clipboard.writeText(t);alert("✅ "+t+" Copied! - Have blessed day! / Usuku olubusisiwe!");}
+function copyE(){navigator.clipboard.writeText("sheshadelivery404@gmail.com");alert("✅ Email Copied! - Have blessed day!");}
+var lang='zu';
+var dict={
+zu:{
+welcomeTitle:'🛒 SIYAKWAMUKELA KWA PHUSHA DELIVERY!',
+safeFastTitle:'Fast and Safe - Senza izinto zibe lula!',
+lovelyTitle:'❤️ KUBATHENGI BETHU ABATHANDEKAYO:',
+customerWelcomeText:'✅ Siyakwamukela kwa Phusha Delivery - Fast and Safe!\n⚡ Senza izinto zibe lula kuwena - Lovely customers\n🛡️ Fast and Safe Delivery - Siyasheshisa - Kuphephile!\n📤 Yabelana nabanye - Share this app to others\n🙏 Ube nosuku olubusisiwe - Have blessed day!\n🤖 AI - IsiZulu or English - Khetha phezulu!',
+startBtn:'QALA - NGENA - FAKA IGAMA OR PUT NAME 🔥',
+loginTitle:'🛒 CUSTOMER LOGIN - FAKA IGAMA OR PUT NAME',
+loginSub:'Siyakwamukela - Lovely Customers - Have blessed day - Fast & Safe!',
+labelName:'Put Name or Igama:',
+labelPhone:'Nenamba / Phone Number:',
+loginBtn:'NGENA / LOGIN - BONA IZITOLO FIREBASE 🛒 - HAVE BLESSED DAY',
+welcomeTxt:'Sawubona',blessedTxt:'Ube nosuku olubusisiwe!',
+fastSafeTitle:'✅ PHUSHA - Fast and Safe - Lovely Customers',
+easyText:'Senza izinto zibe lula - Yabelana nabanye - Share this app!',
+shopBtn:'QALA UKUTHENGA - BONA IZITOLO FIREBASE 🛒 🙏',
+mallsTxt:'Ama-Malls - Firebase',allProdTxt:'📦 Yonke - Retail 1-5 / Gros a 6+ - Fast & Safe',
+gpsTitle:'📍 GPS YANGEMPELA',feeLbl:'Delivery Fee',checkoutTitle:'Checkout - Khokha',
+checkoutBtn:'CHECKOUT - KHOKHA - Have blessed day 🙏',placeBtn:'FAKA I-ORDER - Have blessed day! 🔥',
+payNowTitle:'💰 KHOKHA MANJE - 0671882698',shareRefTitle:'📤 Share Reference - Admin Ubon a LIVE',
+shareBtn:'📤 SHARE REF - ADMIN BONA',shareAppText:'🙏 Yabelana nabanye - Ube nosuku olubusisiwe! - Fast and Safe!',
+back1:'⬅️ Emuva',continue1:'Qhubeka - Ube nosuku olubusisiwe'
+},
+en:{
+welcomeTitle:'🛒 WELCOME TO PHUSHA DELIVERY!',
+safeFastTitle:'Fast and Safe - Make Things Easy!',
+lovelyTitle:'❤️ FOR OUR LOVELY CUSTOMERS:',
+customerWelcomeText:'✅ Welcome to Phusha Delivery - Fast and Safe!\n⚡ Make things easy for our lovely customers\n🛡️ Fast and Safe Delivery\n📤 Feel free to share this app to others\n🙏 Have blessed day!\n🤖 AI - Zulu or English - Choose language on top!',
+startBtn:'START - ENTER - PUT NAME OR IGAMA 🔥',
+loginTitle:'🛒 CUSTOMER LOGIN - PUT NAME OR IGAMA',
+loginSub:'Welcome - Lovely Customers - Have blessed day - Fast & Safe!',
+labelName:'Put Name or Igama:',
+labelPhone:'Nenamba / Phone Number:',
+loginBtn:'LOGIN - SEE STORES FIREBASE 🛒 - HAVE BLESSED DAY',
+welcomeTxt:'Welcome',blessedTxt:'Have blessed day!',
+fastSafeTitle:'✅ PHUSHA - Fast and Safe - Lovely Customers',
+easyText:'Make things easy - Feel free to share this app to others!',
+shopBtn:'START SHOPPING - SEE STORES FIREBASE 🛒 🙏',
+mallsTxt:'Malls - Firebase',allProdTxt:'📦 All - Retail 1-5 / Wholesale 6+ - Fast & Safe',
+gpsTitle:'📍 REAL GPS',feeLbl:'Delivery Fee',checkoutTitle:'Checkout',
+checkoutBtn:'CHECKOUT - Have blessed day 🙏',placeBtn:'PLACE ORDER - Have blessed day! 🔥',
+payNowTitle:'💰 PAY NOW - 0671882698',shareRefTitle:'📤 Share Reference - Admin See LIVE',
+shareBtn:'📤 SHARE REF - ADMIN SEE',shareAppText:'🙏 Feel free to share this app to others - Have blessed day! - Fast and Safe!',
+back1:'⬅️ Back',continue1:'Continue - Have blessed day'
+}
+};
+function setLang(l){
+  lang=l;window.lang=l;localStorage.setItem('phusha_lang',l);
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  var btnZu=document.getElementById('btnZuW');var btnEn=document.getElementById('btnEnW');
+  var btnZuL=document.getElementById('btnZuL');var btnEnL=document.getElementById('btnEnL');
+  if(btnZu) btnZu.classList.toggle('active',l==='zu');
+  if(btnEn) btnEn.classList.toggle('active',l==='en');
+  if(btnZuL) btnZuL.classList.toggle('active',l==='zu');
+  if(btnEnL) btnEnL.classList.toggle('active',l==='en');
+  for(var k in dict[l]){var el=document.getElementById(k);if(el){el.innerText=dict[l][k];}}
+  // AI auto translate effect
+  var aiTxt=document.getElementById('aiText');
+  if(aiTxt) aiTxt.innerText= l==='zu'? '🤖 AI: Ngihumushele ku IsiZulu - Fast and Safe - Siyakwamukela! Put Name or Igama - Nenamba!' : '🤖 AI: Translated to English - Fast and Safe - Welcome! Put Name or Igama - Nenamba!';
+}
+function toggleAi(){var b=document.getElementById('aiHelperBox');b.style.display=b.style.display==='none'?'block':'none';}
+function toggleAiLogin(){var b=document.getElementById('aiLoginBox');b.style.display=b.style.display==='none'?'block':'none';}
+function goToLogin(){document.getElementById('welcomeScreen').style.display='none';document.getElementById('loginScreen').style.display='flex';}
+var cart=[],oid=null,custName="",custCell="",plasticCount=1,tipAmount=2,currentStoreId=null,currentStoreData=null;
+function getProdsFirebase(){if(!currentStoreData) return [];const prods=currentStoreData.products||[];return prods.map(p=>({name:p.name,price:parseFloat(p.price),retail:parseFloat(p.price),grosaPrice:parseFloat(p.price)+5,grosaAdd:5,image:p.img||"logo.jpg"}));}
+function getProductPrice(p,qty){var retail=p.price||10;var add=p.grosaAdd||5;var grosa=retail+add;if(qty<=5)return {unit:retail,type:'RETAIL 1-5',total:retail*qty};else return {unit:grosa,type:'GROSA 6+ +R'+add,total:grosa*qty};}
+function renderMallsFirebase(){const stores=window.firebaseStores||{};const entries=Object.entries(stores);const div=document.getElementById('mallList');if(!entries.length){div.innerHTML='<div class="card">Akukho sitolo - Admin akakafaki - Have blessed day!</div>';return;}div.innerHTML='<div class="card" onclick="sm(\'Firebase National\')" style="border:2px solid gold"><b>📍 Firebase National - '+entries.length+' Stores LIVE - Fast and Safe</b><br><small style="color:#0f0">● FIREBASE REAL - Have blessed day! Share app!</small><br><div style="margin-top:6px"><button class="copyBtn" onclick="copyT(\'0671882698\')">📋 0671882698</button><button class="copyBtn" onclick="copyE()">📧 COPY EMAIL</button></div></div>';}
+window.renderMallsFirebase=renderMallsFirebase;
+function sm(m){document.getElementById('mt').innerText=m;const stores=window.firebaseStores||{};const entries=Object.entries(stores);document.getElementById('sl').innerHTML=entries.map(([id,s])=>`<div class="card" style="border:1px solid gold;cursor:pointer" onclick="openFirebaseStore('${id}')"><b>${s.type==='spares'?'🔧':'🛒'} ${s.name}</b><br><small>📍 ${s.addr} • ⏱️ ${s.time}</small></div>`).join('')||'<div class="card">Akukho sitolo</div>';go('shops');}
+function openFirebaseStore(id){currentStoreId=id;currentStoreData=window.firebaseStores[id];document.getElementById('st').innerText=currentStoreData.name;document.getElementById('storeAddr').innerText=currentStoreData.addr;document.getElementById('storeLocGPS').innerText=currentStoreData.addr;go('prods');rprodsFirebase();}
+function rprodsFirebase(){var all=getProdsFirebase();if(!all.length){all=[{name:"No products - Admin will add - Have blessed day!",price:0,retail:0,grosaPrice:5,grosaAdd:5,image:"logo.jpg"}];}function cardHtml(p){var count=cart.filter(c=>c.name==p.name).length;var img=p.image||"logo.jpg";var retail=p.retail||p.price;var grosa=p.grosaPrice||retail+5;if(count>0){var currentPrice=getProductPrice(p,count);return '<div class="card prod-card in-cart"><img src="'+img+'" class="prod-img" onerror="this.src=\'logo.jpg\'"><b>'+p.name+'</b><br><div class="price-tag"><span class="price-retail">Retail 1-5: R'+retail+'</span><span class="price-grosa">Gros a 6+: R'+grosa+' Add</span></div><small style="color:#0f0">✅ '+count+'x - '+currentPrice.type+' - R'+currentPrice.total+'</small><div class="qty-row"><button class="qty-btn qty-minus" onclick="changeProdQtyFirebase(\''+p.name+'\',-1)">−</button><span class="qty-val">'+count+'</span><button class="qty-btn qty-plus" onclick="changeProdQtyFirebase(\''+p.name+'\',1)">+</button></div></div>';}else{return '<div class="card prod-card"><img src="'+img+'" class="prod-img" onerror="this.src=\'logo.jpg\'"><b>'+p.name+'</b><br><div class="price-tag"><span class="price-retail">Retail 1-5: R'+retail+'</span><span class="price-grosa">Gros a 6+: R'+grosa+' Add</span></div><button class="btn y" onclick="addToCartFirebase(\''+p.name+'\','+retail+')">ADD - R'+retail+'</button></div>';}}document.getElementById('pg').innerHTML=all.map(p=>cardHtml(p)).join('');calc();}
+function addToCartFirebase(name,price){cart.push({name:name,price:parseFloat(price),store:currentStoreData.name});document.getElementById('cc').innerText=cart.length+' items';document.getElementById('ct').innerText='R'+cart.reduce((s,i)=>s+i.price,0).toFixed(2);rprodsFirebase();calc();}
+function changeProdQtyFirebase(name,delta){if(delta>0){var count=cart.filter(c=>c.name==name).length+1;var p=getProdsFirebase().find(x=>x.name==name);var retail=p?p.price:10;var priceInfo=getProductPrice({price:retail,grosaAdd:5},count);cart=cart.filter(c=>c.name!=name);for(var i=0;i<count;i++)cart.push({name:name,price:priceInfo.unit,store:currentStoreData.name});}else{var idx=cart.findIndex(c=>c.name==name);if(idx>=0)cart.splice(idx,1);}rprodsFirebase();calc();}
+function changePlastic(d){plasticCount=Math.max(0,plasticCount+d);document.getElementById('plasticQty').innerText=plasticCount;calc();}
+function changeTip(d){tipAmount=Math.max(0,tipAmount+d);document.getElementById('tipQty').innerText='R'+tipAmount;document.getElementById('tipInput').value=tipAmount;calc();}
+function syncKM(v){document.getElementById('kmInput').value=v;document.getElementById('kmInput2').value=v;calc();}
+function calc(){var grouped={};cart.forEach(c=>{if(!grouped[c.name])grouped[c.name]={qty:0,unit:0};grouped[c.name].qty++;grouped[c.name].unit=c.price;});var sub=0;var detail='';for(var k in grouped){var g=grouped[k];var tot=g.qty*g.unit;sub+=tot;detail+=k+': '+g.qty+'x R'+g.unit+' = R'+tot+'<br>';}var tipVal=parseFloat(document.getElementById('tipInput').value)||tipAmount;var plasticCost=plasticCount*3;var km=parseFloat(document.getElementById('kmInput').value)||2;var del=17+(km>3?(km-3)*3:0);var handling=cart.length*1.2;var total=sub+plasticCost+tipVal+del+handling;var lines=detail+'<hr>Sub: R'+sub.toFixed(2)+'<br>Plastic x'+plasticCount+': R'+plasticCost+'<br>Tip: R'+tipVal+'<br>Del ('+km+'km): R'+del.toFixed(2)+'<br>';document.getElementById('breakLines').innerHTML=lines;document.getElementById('ltotal').innerText='TOTAL R'+total.toFixed(2);document.getElementById('delFee').value='R'+del.toFixed(2);document.getElementById('co').innerHTML=detail;document.getElementById('coBreak').innerHTML=lines+'<b>Total R'+total.toFixed(2)+'</b>';document.getElementById('breakFinal').innerHTML=lines+'<b>Total R'+total.toFixed(2)+'</b>';return{total,km,sub};}
+async function placeOrderFirebase(){
+  if(!cart.length) return alert("Cart empty");
+  var calcData=calc();
+  var id='PHUSHA-'+Date.now().toString().slice(-6);
+  var order={orderId:id,reference:id,payRef:id,status:'pending',customer:custName,phone:custCell,total:calcData.total,items:cart.map(c=>c.name),store:cart[0]?.store||'',storeId:currentStoreId||'',time:Date.now(),km:calcData.km,address:document.getElementById('custAddress').value||document.getElementById('ca').value||''};
+  await window.fbSet(window.fbRef(window.db,'orders/'+id),order);
+  oid=id;document.getElementById('tid').innerText=id;go('track');document.getElementById('payRef').value=id;document.getElementById('payAmount').value=calcData.total.toFixed(2);
+  alert('✅ ORDER - REF: '+id+' - Have blessed day! Lovely customer!');
+}
+async function sharePaymentRefFirebase(){
+  var ref=document.getElementById('payRef').value.trim();
+  var amt=document.getElementById('payAmount').value.trim()||calc().total.toFixed(2);
+  var method=document.getElementById('payMethod').value||'EFT';
+  if(!ref) return alert("Faka Ref");
+  const snap=await window.fbGet(window.fbRef(window.db,'orders/'+oid));
+  let o=snap.val()||{};o.paymentRef=ref;o.paymentAmount=amt;o.paymentMethod=method;o.reference=ref;o.payRef=ref;o.status='paid_pending_confirm';
+  await window.fbSet(window.fbRef(window.db,'orders/'+oid),o);
+  document.getElementById('refStatus').innerHTML='<b style="color:#0f0">✅ Ref '+ref+' Shared - Have blessed day! Admin ubona LIVE - Copy: '+ref+' <button class="copyBtn" onclick="copyT(\''+ref+'\')">📋 COPY REF</button></b>';
+  document.getElementById('tprog').style.width='50%';
+}
+async function editPaymentRefFirebase(){if(!oid) return;const snap=await window.fbGet(window.fbRef(window.db,'orders/'+oid));let o=snap.val()||{};var newRef=prompt("Edit Ref:",o.paymentRef||'');if(newRef===null) return;o.paymentRef=newRef;o.reference=newRef;o.payRef=newRef;await window.fbSet(window.fbRef(window.db,'orders/'+oid),o);document.getElementById('payRef').value=o.paymentRef;}
+function custLogin(){
+  var n=document.getElementById('custName').value.trim();
+  var c=document.getElementById('custCell').value.trim();
+  if(!n){alert(lang==='zu'? "Faka Igama noma Put Name - Your Name!" : "Put Name or Igama - Enter your name!");return;}
+  if(!c){alert(lang==='zu'? "Faka Nenamba / Phone Number!" : "Put Phone Number / Nenamba!");return;}
+  custName=n;custCell=c;
+  document.getElementById('loginScreen').style.display='none';document.getElementById('welcomeScreen').style.display='none';document.getElementById('app').style.display='block';
+  document.getElementById('custDisplay').innerText=n+' - '+c;
+  document.getElementById('welcomeName').innerText=n;
+  document.getElementById('coCust').innerText=n+' - '+c;
+}
+function go(id){['w','malls','shops','prods','checkout','track'].forEach(x=>{var e=document.getElementById(x);if(e)e.style.display=x===id?'block':'none'});if(id==='prods'){rprodsFirebase();}}
+function selectPay(type){document.querySelectorAll('.pay-opt').forEach(el=>el.classList.remove('active'));event.currentTarget.classList.add('active');var map={"capitec_app":"Capitec App - 1621439370","eft_076":"EFT Transfer - 0671882698 - 1621439370","cash":"Cash - Driver"};document.getElementById('payMethod').value=map[type]||type;var info=document.getElementById('payInfo');info.style.display='block';info.innerHTML='<b style="color:gold">🏦 '+map[type]+'</b><br><small>📧 sheshadelivery404@gmail.com - <button class="copyBtn" onclick="copyE()">📧 COPY EMAIL</button> - Have blessed day!</small>';}
+setLang('zu');
+</script></body></html>
